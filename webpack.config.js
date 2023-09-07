@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const FileManagerPlugin = require('filemanager-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
@@ -38,11 +37,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/i,
         type: 'asset/resource',
       },
     ],
@@ -51,19 +54,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
-      chunks: ['index'],
-    }),
-    new FileManagerPlugin({
-      events: {
-        onEnd: {
-          copy: [
-            {
-              source: path.join('src', 'static'),
-              destination: 'dist',
-            },
-          ],
-        },
-      },
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
