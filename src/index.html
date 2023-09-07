@@ -13,7 +13,8 @@
   </head>
   <body>
     <div class="container">
-    <header class="header">
+      <header class="header">
+        <div class="header__logo"></div>
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -37,15 +38,23 @@
           </ul>
         </nav>
         <div class="header__btns">
-          <img src="assets/images/IconPlanet.svg" alt="icon" class="header__icon">
-          <select name="select" id="lang" class="header__select">
-            <option class="header__option">EN</option>
-            <option class="header__option">RU</option>
-          </select>
+          <label class="header__label" for="lang">
+            <img
+              src="assets/images/IconPlanet.svg"
+              alt="icon"
+              class="header__icon"
+            />
+            <select name="select" id="lang" class="header__select">
+              <option class="header__option">EN</option>
+              <option class="header__option">RU</option>
+            </select>
+          </label>
+          <button class="header__btn btn btn_sm">LOG IN</button>
+          <button class="header__btn btn btn_sm btn_blue">SIGN UP</button>
         </div>
-    </header>
-    <main class="main"></main>
-  </div>
+      </header>
+      <main class="main"></main>
+    </div>
     <div class="footer"><div class="footer__container">footer</div></div>
   </body>
 </html>

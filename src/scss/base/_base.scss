@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  margin: 0 auto;
 }
 
 .header {
@@ -63,4 +64,9 @@ a {
   display: inline-block;
   cursor: pointer;
   color: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
 }

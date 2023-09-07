@@ -1,0 +1,27 @@
+@use '../base/variables';
+@use '../base/extends';
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        @extend .nav;
+    }
+
+    &__item {
+        margin-right: 32px;
+        @extend %nav-text;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+        color: variables.$blue;
+    }
+}

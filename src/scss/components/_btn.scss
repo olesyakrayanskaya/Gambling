@@ -1,0 +1,29 @@
+@use '../base/variables';
+@use '../base/extends';
+
+.btn {
+  display: flex;
+  padding: 20px 72px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  border: 2px solid variables.$additionalPurple;
+  background: transparent;
+  width: 393px;
+  height: 72px;
+  @extend %buttonLg-text;
+
+  &_blue {
+    background-color: variables.$blue;
+    border: transparent;
+  }
+
+  &_sm {
+    width: 97px;
+    height: 48px;
+    padding: 14px;
+    @extend %buttonSm-text;
+    margin-left: 14px;
+    border-radius: 24px;
+  }
+}
