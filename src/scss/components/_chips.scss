@@ -1,0 +1,11 @@
+@use '../base/variables';
+@use '../base/extends';
+
+.chips {
+  flex: 0 0 auto;
+  margin-right: 50px;
+
+  &__item {
+    margin-right: 16px;
+  }
+}

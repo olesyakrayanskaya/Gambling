@@ -1,0 +1,25 @@
+@use '../base/variables';
+@use '../base/extends';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 0 2 content;
+
+  &__title {
+    @extend %h1-text;
+    margin-bottom: 24px;
+
+    span {
+      display: inline-block;
+      color: variables.$blue;
+    }
+  }
+
+  &__subtitle {
+    @extend %h4-text;
+    margin-bottom: 48px;
+  }
+}
