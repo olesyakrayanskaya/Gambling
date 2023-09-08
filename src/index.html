@@ -12,48 +12,96 @@
     <title>House of gambling</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__logo"></div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#" target="_blank">About us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" target="_blank">Brands</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" target="_blank">Commissions</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" target="_blank">News</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" target="_blank">Contact us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" target="_blank">Careers</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns">
+        <label class="header__label" for="lang">
+          <img
+            src="assets/images/IconPlanet.svg"
+            alt="icon"
+            class="header__icon"
+          />
+          <select name="select" id="lang" class="header__select">
+            <option class="header__option">EN</option>
+            <option class="header__option">RU</option>
+          </select>
+        </label>
+        <button class="header__btn btn btn_sm">LOG IN</button>
+        <button class="header__btn btn btn_sm btn_blue">SIGN UP</button>
+      </div>
+    </header>
     <div class="container">
-      <header class="header">
-        <div class="header__logo"></div>
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#" target="_blank">About us</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#" target="_blank">Brands</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#" target="_blank">Commissions</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#" target="_blank">News</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#" target="_blank">Contact us</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#" target="_blank">Careers</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__btns">
-          <label class="header__label" for="lang">
-            <img
-              src="assets/images/IconPlanet.svg"
-              alt="icon"
-              class="header__icon"
-            />
-            <select name="select" id="lang" class="header__select">
-              <option class="header__option">EN</option>
-              <option class="header__option">RU</option>
-            </select>
-          </label>
-          <button class="header__btn btn btn_sm">LOG IN</button>
-          <button class="header__btn btn btn_sm btn_blue">SIGN UP</button>
-        </div>
-      </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="about">
+          <h1 class="about__title">HOUSE OF <span>GAMBLING</span></h1>
+          <h4 class="about__subtitle">Raise your ROI with direct advertiser</h4>
+          <button class="about__btn btn btn_blue">Become a Partner</button>
+        </section>
+        <section class="chips">
+          <img
+            src="./assets/images/Vertical_1.svg"
+            alt="chips"
+            class="chips__item"
+          />
+          <img
+            src="./assets/images/Vertical_2.svg"
+            alt=""
+            class="chips__item"
+          />
+          <img
+            src="./assets/images/Vertical_3.svg"
+            alt=""
+            class="chips__item"
+          />
+        </section>
+        <section class="blog">
+          <h2 class="blog__title">BLOG</h2>
+          <div class="blog__inner">
+            <article class="blog__item">
+              <p class="blog__text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+              <time class="blog__date" datetime="10.02.2023">10.02.2023</time>
+            </article>
+            <article class="blog__item">
+              <p class="blog__text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+              <time class="blog__date" datetime="10.02.2023">10.02.2023</time>
+            </article>
+            <article class="blog__item">
+              <p class="blog__text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+              <time class="blog__date" datetime="10.02.2023">10.02.2023</time>
+            </article>
+            <article class="blog__item">
+              <p class="blog__text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+              <time class="blog__date" datetime="10.02.2023">10.02.2023</time>
+            </article>
+            <article class="blog__item">
+              <p class="blog__text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+              <time class="blog__date" datetime="10.02.2023">10.02.2023</time>
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
     <div class="footer">
       <div class="footer__container">

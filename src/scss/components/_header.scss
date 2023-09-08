@@ -12,10 +12,8 @@
   border-radius: 64px;
   border: 4px solid variables.$blue;
   background-color: variables.$deepBlue;
-  position: fixed;
-  top: 16px;
-  z-index: 200;
   max-width: 1640px;
+  margin-top: 16px;
 
   &__logo {
     width: 287px;
