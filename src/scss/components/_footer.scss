@@ -1,0 +1,55 @@
+@use '../base/variables';
+@use '../base/extends';
+
+.footer {
+  padding: 40px 0 24px;
+  border-radius: 64px 64px 0px 0px;
+  border-top: 4px solid variables.$blue;
+  border-right: 4px solid variables.$blue;
+  border-left: 4px solid variables.$blue;
+  background: variables.$deepBlue;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__nav .nav__item {
+    margin-right: 40px;
+  }
+
+  &__nav .nav__item:last-child {
+    margin-right: 0;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__subtitle {
+    @extend %nav-text;
+    margin-bottom: 14px;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .fill:hover {
+    fill: url(#paint0_linear_2515_201);
+  }
+
+  &__icon:last-child {
+    margin-right: 0;
+  }
+}
