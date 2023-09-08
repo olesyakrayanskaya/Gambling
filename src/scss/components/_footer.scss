@@ -40,16 +40,15 @@
     display: flex;
   }
 
-  &__icon {
+  &__link {
     margin-right: 8px;
-    cursor: pointer;
+  }
+
+  &__link:last-child {
+    margin-right: 0;
   }
 
   .fill:hover {
     fill: url(#paint0_linear_2515_201);
-  }
-
-  &__icon:last-child {
-    margin-right: 0;
   }
 }
