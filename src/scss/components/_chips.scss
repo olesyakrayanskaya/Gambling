@@ -18,6 +18,31 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    overflow: hidden;
+  }
+
+  &__item_first &__wrapper {
+    padding-top: -100%;
+    animation-name: translateDown;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &__item_second &__wrapper {
+    padding-bottom: -100%;
+    animation-name: translateUp;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &__item_third &__wrapper {
+    padding-top: -100%;
+    animation-name: translateDown;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
   &__wrapper {
@@ -34,11 +59,7 @@
     object-fit: contain;
     object-position: center;
     margin: 12px 0;
-
-    // animation-name: translateDown;
-    // animation-duration: 9s;
-    // animation-timing-function: linear;
-    // animation-iteration-count: infinite;
+    opacity: 0.6;
   }
 
   &__img_lg {
@@ -59,6 +80,16 @@
 
     to {
       transform: translate(0, 0);
+    }
+  }
+
+  @keyframes translateUp {
+    from {
+      transform: translate(0, 0);
+    }
+
+    to {
+      transform: translate(0, -100%);
     }
   }
 }
