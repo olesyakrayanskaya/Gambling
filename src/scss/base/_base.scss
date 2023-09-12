@@ -26,11 +26,10 @@ body {
   background-color: variables.$deepBlue;
   background-image: url('assets/images/DotLight.svg'),
     url('assets/images/EllipsLight.svg');
-  background-position: left, right 574px;
+  background-position: left, right;
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, 574px;
+  background-size: contain, cover;
   position: relative;
-  padding-bottom: 130px;
 }
 
 .header {

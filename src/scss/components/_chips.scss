@@ -4,8 +4,61 @@
 .chips {
   flex: 0 0 auto;
   margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 82vh;
 
   &__item {
     margin-right: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin: 12px 0;
+
+    // animation-name: translateDown;
+    // animation-duration: 9s;
+    // animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+  }
+
+  &__img_lg {
+    height: 220px;
+  }
+
+  &__img_sm {
+    width: 110px;
+    height: 250px;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  @keyframes translateDown {
+    from {
+      transform: translate(0, -100%);
+    }
+
+    to {
+      transform: translate(0, 0);
+    }
   }
 }

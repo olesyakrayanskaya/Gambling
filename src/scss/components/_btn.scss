@@ -13,9 +13,17 @@
   height: 72px;
   @extend %buttonLg-text;
 
+  &:hover {
+    background-color: rgba(variables.$white, 0.2);
+  }
+
   &_blue {
     background-color: variables.$blue;
     border: transparent;
+  }
+
+  &_blue:hover {
+    background-color: variables.$additionalPurple;
   }
 
   &_sm {

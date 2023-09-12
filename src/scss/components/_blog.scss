@@ -7,6 +7,7 @@
   justify-content: flex-start;
   align-items: center;
   flex: 0 0 auto;
+  margin-top: 10vh;
 
   &__title {
     text-transform: uppercase;
@@ -30,12 +31,13 @@
     position: relative;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    padding-right: 16px;
+    overflow: hidden;
   }
 
   &__inner {
     height: 100%;
     width: 100%;
-    border-radius: 100px;
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -45,10 +47,10 @@
   &__wrapper::after {
     content: '';
     position: absolute;
-    top: 96px;
-    right: 0px;
+    top: 90px;
+    right: 16px;
     width: 8px;
-    height: 403px;
+    height: 409px;
     background-color: rgba(255, 255, 255, 0.12);
     border-radius: 4px;
   }

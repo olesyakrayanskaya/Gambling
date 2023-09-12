@@ -2,13 +2,15 @@
 @use '../base/extends';
 
 .footer {
-  padding: 40px 0 24px;
+  padding: 30px 0;
   border-radius: 64px 64px 0px 0px;
   border-top: 4px solid variables.$blue;
   border-right: 4px solid variables.$blue;
   border-left: 4px solid variables.$blue;
   background: variables.$deepBlue;
   width: 100%;
+  z-index: 300;
+  height: 11vh;
 
   &__container {
     display: flex;
