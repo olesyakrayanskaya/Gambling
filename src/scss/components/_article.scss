@@ -1,6 +1,10 @@
 @use '../base/variables';
 @use '../base/extends';
 
+.article__body {
+  height: 100%;
+}
+
 .article {
   margin: 40px auto;
   padding: 20px 60px;
@@ -14,12 +18,26 @@
   align-items: center;
   justify-content: space-around;
 
+  @media (max-width: 420px) {
+    height: 90%;
+  }
+
   &__title {
     @extend %h4-text;
+
+    @media (max-width: 420px) {
+      font-size: 24px;
+    }
+  
   }
 
   &__text {
     @extend %article-text;
+
+    @media (max-width: 420px) {
+      font-size: 18px;
+    }
+
   }
 
   &__date {
@@ -37,6 +55,11 @@
 
   &__comment {
     @extend %nav-text;
+    margin: 0 15px;
+
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
 
   &__link {

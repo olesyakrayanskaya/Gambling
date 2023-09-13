@@ -39,6 +39,10 @@
     backdrop-filter: blur(10px);
     padding-right: 16px;
     overflow: hidden;
+
+    @media (max-width: 600px) {
+      width: 90%;
+    }
   }
 
   &__inner {
