@@ -7,10 +7,10 @@
   border-top: 4px solid variables.$blue;
   border-right: 4px solid variables.$blue;
   border-left: 4px solid variables.$blue;
-  background: variables.$deepBlue;
+  background-color: variables.$deepBlue;
   width: 100%;
-  z-index: 300;
   height: 11vh;
+  z-index: 300;
 
   &__container {
     display: flex;

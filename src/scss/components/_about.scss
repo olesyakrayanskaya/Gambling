@@ -8,6 +8,7 @@
   align-items: flex-start;
   flex: 0 2 content;
   margin-top: 18vh;
+  z-index: 300;
 
   &__title {
     @extend %h1-text;
