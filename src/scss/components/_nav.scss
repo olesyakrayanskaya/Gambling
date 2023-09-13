@@ -7,6 +7,14 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 1280px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 685px) {
+    justify-content: center;
+  }
+
   &__list {
     @extend .nav;
     flex-wrap: wrap;
@@ -15,10 +23,17 @@
   &__item {
     margin-right: 32px;
     @extend %nav-text;
+
+    @media (max-width: 685px) {
+      margin: 10px 20px;
+    }
   }
 
   &__item:last-child {
     margin-right: 0;
+    @media (max-width: 685px) {
+      margin-right: 20px;
+    }
   }
 
   &__link:hover,

@@ -10,6 +10,13 @@
   margin-top: 18vh;
   z-index: 300;
 
+  @media (max-width: 1440px) {
+    margin-top: 40px;
+    align-items: center;
+    flex: 0 0 auto;
+    padding-bottom: 80px;
+  }
+
   &__title {
     @extend %h1-text;
     margin-bottom: 24px;
@@ -18,10 +25,22 @@
       display: inline-block;
       color: variables.$blue;
     }
+
+    @media (max-width: 1560px) {
+      font-size: 78px;
+    }
+
+    @media (max-width: 900px) {
+      text-align: center;
+    }
   }
 
   &__subtitle {
     @extend %h4-text;
     margin-bottom: 48px;
+
+    @media (max-width: 1560px) {
+      font-size: 28px;
+    }
   }
 }

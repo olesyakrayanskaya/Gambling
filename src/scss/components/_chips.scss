@@ -10,6 +10,13 @@
   overflow: hidden;
   height: 82vh;
 
+  @media (max-width: 1440px) {
+    margin-right: 0;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+  }
+
   &__item {
     margin-right: 16px;
     display: flex;
@@ -19,6 +26,13 @@
     align-items: center;
     height: 100%;
     overflow: hidden;
+
+    @media (max-width: 1440px) {
+      flex-direction: row;
+      margin-right: 0;
+      height: 120px;
+      width: 100%;
+    }
   }
 
   &__item_first &__wrapper {
@@ -27,6 +41,11 @@
     animation-duration: 8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @media (max-width: 1440px) {
+      padding-top: 0;
+      padding-left: -100%;
+      animation-name: translateRight;
+    }
   }
 
   &__item_second &__wrapper {
@@ -35,6 +54,11 @@
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @media (max-width: 1440px) {
+      padding-bottom: 0;
+      padding-right: -100%;
+      animation-name: translateLeft;
+    }
   }
 
   &__item_third &__wrapper {
@@ -43,6 +67,11 @@
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @media (max-width: 1440px) {
+      padding-top: 0;
+      padding-left: -100%;
+      animation-name: translateRight;
+    }
   }
 
   &__wrapper {
@@ -51,6 +80,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @media (max-width: 1440px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__img {
@@ -60,10 +94,28 @@
     object-position: center;
     margin: 12px 0;
     opacity: 0.6;
+
+    @media (max-width: 1440px) {
+      margin: 0 12px;
+    }
   }
 
   &__img_lg {
     height: 220px;
+
+    @media (max-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__img_media  {
+    width: 220px;
+    height: 100px;
+    margin: 0 12px;
+
+    @media (min-width: 1441px) {
+      display: none;
+    }
   }
 
   &__img_sm {
@@ -71,6 +123,10 @@
     height: 250px;
     margin: 0;
     object-fit: cover;
+
+    @media (max-width: 1440px) {
+      display: none;
+    }
   }
 
   @keyframes translateDown {
@@ -90,6 +146,26 @@
 
     to {
       transform: translate(0, -100%);
+    }
+  }
+
+  @keyframes translateLeft {
+    from {
+      transform: translate(0, 0);
+    }
+
+    to {
+      transform: translate(-100%, 0);
+    }
+  }
+
+  @keyframes translateRight {
+    from {
+      transform: translate(-100%, 0);
+    }
+
+    to {
+      transform: translate(0, 0);
     }
   }
 }

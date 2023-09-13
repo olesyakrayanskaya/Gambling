@@ -12,19 +12,38 @@
   height: 11vh;
   z-index: 300;
 
+  @media (max-width: 985px) {
+    padding: 20px 0;
+    height: auto;
+  }
+
   &__container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width: 985px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__nav .nav__item {
     margin-right: 40px;
+
+    @media (max-width: 985px) {
+      margin-right: 0;
+    }
   }
 
   &__nav .nav__item:last-child {
     margin-right: 0;
+  }
+
+  &__nav {
+    @media (max-width: 985px) {
+      margin-bottom: 0;
+    }
   }
 
   &__social {
@@ -37,6 +56,10 @@
   &__subtitle {
     @extend %nav-text;
     margin-bottom: 14px;
+
+    @media (max-width: 985px) {
+      align-self: center;
+    }
   }
 
   &__icons {

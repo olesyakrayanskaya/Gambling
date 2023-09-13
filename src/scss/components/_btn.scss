@@ -13,6 +13,13 @@
   height: 72px;
   @extend %buttonLg-text;
 
+  @media (max-width: 1560px) {
+    width: 370;
+    height: 65px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
   &:hover {
     background-color: rgba(variables.$white, 0.2);
   }
