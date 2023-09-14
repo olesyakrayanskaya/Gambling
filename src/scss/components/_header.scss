@@ -19,6 +19,10 @@
     flex-direction: column;
   }
 
+  @media (max-width: 420px) {
+    display: none;
+  }
+
   &__logo {
     width: 287px;
     height: 32px;
