@@ -1,2 +1,2 @@
-import '../src/main.scss';
 import './js/mobile';
+import '../src/main.scss';
