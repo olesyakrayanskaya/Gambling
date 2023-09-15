@@ -64,6 +64,7 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     padding: 24px 16px 0 24px;
+    z-index: 400;
   }
 
   &__wrapper::after {
@@ -97,18 +98,18 @@
   }
 
   &__inner::-webkit-scrollbar-thumb {
-    background: variables.$blue;
+    background: variables.$blue;;
     border-radius: 4px;
   }
 
   &__inner::-webkit-scrollbar-button:single-button:vertical:decrement {
-    height: 90px;
+    height: 91px;
     width: 8px;
     background-color: transparent;
   }
 
   &__inner::-webkit-scrollbar-button:single-button:vertical:increment {
-    height: 90px;
+    height: 91px;
     width: 8px;
     background-color: transparent;
   }

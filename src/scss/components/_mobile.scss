@@ -32,8 +32,10 @@
   &__icon {
     width: 36px;
     height: 36px;
-    object-fit: contain;
-    object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
     position: absolute;
     right: 8px;
   }
@@ -45,8 +47,10 @@
   &__burger {
     height: 28px;
     width: 28px;
-    object-fit: contain;
-    object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
     background: transparent;
     border: none;
     margin-top: 5px;

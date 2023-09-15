@@ -42,14 +42,17 @@ body::before {
     rgba(0, 0, 0, 1) 0%,
     rgba(253, 187, 45, 0) 100%
   );
+  z-index: 100;
+  pointer-events: none;
 }
 
 body::after {
   content: url(assets/images/EllipsLight.svg);
   position: absolute;
-  z-index: 200;
   bottom: 0;
   right: 0;
+  z-index: 300;
+  pointer-events: none;
 }
 
 .header {
@@ -57,7 +60,7 @@ body::after {
   position: -webkit-sticky;
   position: sticky;
   top: 14px;
-  z-index: 300;
+  z-index: 400;
 
   @media (max-width: 1440px) {
     position: static;
@@ -79,7 +82,6 @@ body::after {
 
 .footer {
   flex: 0 0 auto;
-  z-index: 300;
 }
 
 .footer__container {
