@@ -3,10 +3,6 @@
 
 .article__body {
   height: 100%;
-
-  @media (max-width: 420px) {
-    height: auto;
-  }
 }
 
 .article {
@@ -22,27 +18,26 @@
   align-items: center;
   justify-content: space-around;
 
-  @media (max-width: 420px) {
+  @media (max-width: 550px) {
     height: 90%;
     margin-top: 60px;
+    border-radius: 40px;
   }
 
   &__title {
     @extend %h4-text;
 
-    @media (max-width: 420px) {
+    @media (max-width: 550px) {
       font-size: 24px;
     }
-  
   }
 
   &__text {
     @extend %article-text;
 
-    @media (max-width: 420px) {
+    @media (max-width: 550px) {
       font-size: 18px;
     }
-
   }
 
   &__date {

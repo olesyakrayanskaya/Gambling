@@ -1,6 +1,9 @@
 # Gambling
 
-progect setup
+##### progect setup
 
 npm install
+
 npm run serve
+
+##### published

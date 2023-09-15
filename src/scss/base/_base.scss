@@ -55,6 +55,18 @@ body::after {
   pointer-events: none;
 }
 
+@-moz-document url-prefix() {
+  body::after {
+    content: url(assets/images/EllipsLight.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 300;
+    pointer-events: none;
+    opacity: 40%;
+  }
+}
+
 .header {
   flex: 0 0 auto;
   position: -webkit-sticky;
