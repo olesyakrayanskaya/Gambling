@@ -33,6 +33,10 @@
       height: 120px;
       width: 100%;
     }
+
+    @media (max-width: 420px) {
+      height: 54px;
+    }
   }
 
   &__item_first &__wrapper {
@@ -98,6 +102,12 @@
     @media (max-width: 1440px) {
       margin: 0 12px;
     }
+
+    @media (max-width: 420px) {
+      width: 49px;
+      height: 49px;
+      margin: 0 5px;
+    }
   }
 
   &__img_lg {
@@ -108,13 +118,19 @@
     }
   }
 
-  &__img_media  {
+  &__img_media {
     width: 220px;
     height: 100px;
     margin: 0 12px;
 
     @media (min-width: 1441px) {
       display: none;
+    }
+
+    @media (max-width: 420px) {
+      width: 109px;
+      height: 49px;
+      margin: 0 5px;
     }
   }
 

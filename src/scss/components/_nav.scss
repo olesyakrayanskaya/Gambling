@@ -15,6 +15,12 @@
     justify-content: center;
   }
 
+  @media (max-width: 420px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   &__list {
     @extend .nav;
     flex-wrap: wrap;

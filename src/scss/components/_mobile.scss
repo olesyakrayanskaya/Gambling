@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px 92px;
+    padding: 10px;
     width: 100%;
   }
 
@@ -23,7 +23,6 @@
     border-radius: 64px;
     border: 2px solid variables.$blue;
     background: variables.$navyBlue;
-    margin-bottom: 40px;
   }
 
   &__label {
