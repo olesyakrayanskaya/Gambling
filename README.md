@@ -6,4 +6,7 @@ npm install
 
 npm run serve
 
-##### published
+##### published:
+
+https://olesyakrayanskaya.github.io/Gambling/
+
